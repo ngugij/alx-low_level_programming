@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)     
+ * main - entry point
+ * Using the function puts in place of printf
  */
 
 int main(void)

@@ -3,6 +3,7 @@
 /**
  * main - entry point
  * Using the function puts in place of printf
+ * * Return: Always 0 (Success)
  */
 
 int main(void)

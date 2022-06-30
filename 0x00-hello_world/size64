@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E 6-size.c -m64 -o 2> /tmp/64
+gcc 6-size.c -m64 -o 2> /tmp/64

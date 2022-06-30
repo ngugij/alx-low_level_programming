@@ -2,7 +2,8 @@
 
 /**
  * main - entry point
- * Return : print size of various types
+ * print size of various types
+ * Return: Always 0 (Success)
  */
 
 int main(void)

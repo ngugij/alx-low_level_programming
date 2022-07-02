@@ -14,12 +14,14 @@ int main(void)
 	int space = 32;
 	int comma = 44;
 
-	for (i = 48; i <= 57;)
+	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
-		putchar(comma);
-		putchar(space);
-		i++;
+		if (i != 57)
+		{
+			putchar(comma);
+			putchar(space);
+		}
 	}
 	putchar(10);
 	return (0);

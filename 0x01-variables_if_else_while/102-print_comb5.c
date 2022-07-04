@@ -18,11 +18,11 @@ int main(void)
 
 	for (j = 48; j <= 57; j++)
 	{
-		for (n = 48; n <= 57; n++)
+		for (n = 48; n <= 56; n++)
 		{
 			for  (i = 48; i <= 57; i++)
 			{
-				for (x = 48; x <= 57; x++)
+				for (x = 49; x <= 57; x++)
 				{
 					putchar(j);
 					putchar(n);

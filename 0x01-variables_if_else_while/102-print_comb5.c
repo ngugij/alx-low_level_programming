@@ -22,7 +22,7 @@ int main(void)
 		{
 			for  (i = j; i <= 57; i++)
 			{
-				for (x = 49; x <= 57; x++)
+				for (x = n + 1; x <= 57; x++)
 				{
 					putchar(j);
 					putchar(n);

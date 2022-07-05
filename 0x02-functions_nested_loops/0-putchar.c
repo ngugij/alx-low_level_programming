@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
+ * main - calls functions
  * printputchar - print "_putchar"
  * followed by a new line
  *
  * Return: 0 (Success)
  */
 
-int printputchar()
+int main(void)
 {
+	printputchar();
+
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');

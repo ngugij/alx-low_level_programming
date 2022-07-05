@@ -4,5 +4,6 @@
 
 int _putchar(char c);
 int printputchar(void);
+int main(void);
 
 #endif

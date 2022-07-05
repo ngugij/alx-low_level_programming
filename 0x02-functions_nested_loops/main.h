@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-int printputchar(void);
+void printputchar(void);
 int main(void);
 
 #endif

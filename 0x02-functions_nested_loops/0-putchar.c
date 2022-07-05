@@ -4,10 +4,10 @@
  * printputchar - print "_putchar"
  * followed by a new line
  *
- * Return: Nothing
+ * Return: 0 (Success)
  */
 
-void printputchar(void)
+int printputchar(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -19,4 +19,5 @@ void printputchar(void)
 	_putchar('r');
 	_putchar('\n');
 
+	return (0);
 }

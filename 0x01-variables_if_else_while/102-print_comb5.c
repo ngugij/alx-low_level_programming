@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	int i;
-	int x;
 	int j;
 	int n;
+	int i;
+	int x;
 	int comma = 44;
 	int space = 32;
 
@@ -20,19 +20,29 @@ int main(void)
 	{
 		for (n = 48; n <= 57; n++)
 		{
-			for  (i = j; i <= 57; i++)
+			for (i =j; i <= 57; i++)
 			{
-				for (x = n + 1; x <= 57; x++)
+				for (; x <= 57; x++)
 				{
-					putchar(j);
-					putchar(n);
-					putchar(space);
-					putchar(i);
-					putchar(x);
-					if (n != 56 && j != 57)
+					if (i == j)
 					{
-						putchar(comma);
+						(x = n + 1);
+					}
+					else
+					{
+						(x =0);
+					}
+					{
+						putchar(j);
+						putchar(n);
 						putchar(space);
+						putchar(i);
+						putchar(x);
+						if (n != 56 && j != 57)
+						{
+							putchar(comma);
+							putchar(space);
+						}
 					}
 				}
 			}

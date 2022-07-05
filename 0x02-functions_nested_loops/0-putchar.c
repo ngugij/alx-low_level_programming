@@ -7,7 +7,7 @@
  * Return: 0 (Success)
  */
 
-int printputchar(void)
+int printputchar()
 {
 	_putchar('_');
 	_putchar('p');

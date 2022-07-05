@@ -9,40 +9,39 @@
 
 int main(void)
 {
-	int j;
-	int n;
 	int i;
-	int x;
+	int j;
+	int k;
+	int l;
 	int comma = 44;
 	int space = 32;
 
-	for (j = 48; j <= 57; j++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (n = 48; n <= 57; n++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (i =j; i <= 57; i++)
+			for (k = i; k <= 57; k++)
 			{
-				for (; x <= 57; x++)
+				for (; l <= 57; l++)
 				{
-					if (i == j)
+					if (k == i)
 					{
-						(x = n + 1);
+						(l = j + 1);
 					}
 					else
 					{
-						(x =0);
+						(l = 0);
 					}
+
+					putchar(i);
+					putchar(j);
+					putchar(space);
+					putchar(k);
+					putchar(l);
+					if (i != 57 && j != 56)
 					{
-						putchar(j);
-						putchar(n);
+						putchar(comma);
 						putchar(space);
-						putchar(i);
-						putchar(x);
-						if (n != 56 && j != 57)
-						{
-							putchar(comma);
-							putchar(space);
-						}
 					}
 				}
 			}

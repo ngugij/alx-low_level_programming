@@ -1,14 +1,14 @@
-#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * printsomething - print "_putchar"
+ * main - print "_putchar"
  * followed by a new line
  *
- * Return: nothing
+ * Return: 0 (Success)
  */
 
-void printsomething(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -19,5 +19,6 @@ void printsomething(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 
 }

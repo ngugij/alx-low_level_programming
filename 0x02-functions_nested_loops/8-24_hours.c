@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * void jack_bauer(void) - prints every minute of the day
+ * jack_bauer(void) - prints every minute of the day
  *
  * Return: nothing
  */
@@ -41,11 +41,5 @@ void jack_bauer(void)
 			}
 			_putchar(10);
 		}
-	
-	
-	
 	}
-
-
-
 }

@@ -12,11 +12,14 @@
 int _islower(int c)
 {
 
-	c = 't';
-	_putchar(islower(c));
-
-	c = 'D';
-	_putchar(islower(c));
+	if (islower(c))
+	{
+		_putchar(49);
+	}
+	else
+	{
+		_putchar(48);
+	}
 
 	return (0);
 }

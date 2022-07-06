@@ -16,15 +16,7 @@ int _abs(int j)
 
 	if (j < 0)
 	{
-		printf("%d \n", j);
+		j =-j;
 	}
-	else if (j == 0)
-	{
-		printf("%d \n", j);
-	}
-	else
-	{
-		printf("%d \n", j);
-	}
-	return (0);
+	return (j);
 }

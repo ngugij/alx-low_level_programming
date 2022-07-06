@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
- * printputchar - print "_putchar"
+ * _putchar - print "_putchar"
  * followed by a new line
  *
  * Return: nothing
  */
 
-void printputchar(void)
+int _putchar(void)
 {
 	_putchar('_');
 	_putchar('p');

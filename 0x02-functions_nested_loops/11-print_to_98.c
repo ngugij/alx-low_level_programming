@@ -17,26 +17,18 @@ void print_to_98(int n)
 	{
 		if (n == 98)
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			printf("%d\n", i);
 		}
 		else if (n < 98)
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", i);
 			i++;
 		}
 		else
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", i);
 			i--;
 		}
 	}
-	_putchar(10);
 
 }

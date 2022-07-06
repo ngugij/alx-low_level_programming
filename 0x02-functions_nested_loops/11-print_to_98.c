@@ -17,18 +17,21 @@ void print_to_98(int n)
 	{
 		if (n == 98)
 		{
-			_putchar(i + '0');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 		}
 		else if (n < 98)
 		{
-			_putchar(i + '0');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 			_putchar(44);
 			_putchar(32);
 			i++;
 		}
 		else
 		{
-			_putchar(i + '0');
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 			_putchar(44);
 			_putchar(32);
 			i--;

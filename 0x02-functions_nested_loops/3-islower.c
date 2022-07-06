@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib>
+#include <ctype.h>
 #include "main.h"
 
 /**
@@ -12,5 +13,11 @@
 int _islower(int c)
 {
 
-	return (write(1, &c, 0));
+	c = 't';
+	_putchar(islower(c));
+
+	c = 'D';
+	_putchar(islower(c));
+
+	return (0);
 }

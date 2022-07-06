@@ -13,6 +13,7 @@ int _abs(int j)
 {
 
 	abs(j);
+	printf("%d\n", j);
 
 	return (0);
 }

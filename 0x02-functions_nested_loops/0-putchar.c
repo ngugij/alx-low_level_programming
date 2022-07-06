@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * _putchar - print "_putchar"
+ * printsomething - print "_putchar"
  * followed by a new line
  *
  * Return: nothing
  */
 
-int _putchar(void)
+void printsomething(void)
 {
 	_putchar('_');
 	_putchar('p');

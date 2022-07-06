@@ -6,7 +6,7 @@
  * _islower - checks for lowercase characters
  *
  * Return: 1 if c is lowercase
- * Return: 0 otherwise
+ * otherwise return 0
  */
 
 int _islower(int c)
@@ -21,5 +21,4 @@ int _islower(int c)
 		_putchar(48);
 	}
 
-	return (0);
 }

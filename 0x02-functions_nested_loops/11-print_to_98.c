@@ -17,16 +17,16 @@ void print_to_98(int n)
 	{
 		if (n == 98)
 		{
-			printf("%d\n", i);
+			printf("%d\n", n);
 		}
 		else if (n < 98)
 		{
-			printf("%d, ", i);
+			printf("%d, ", n);
 			i++;
 		}
 		else
 		{
-			printf("%d, ", i);
+			printf("%d, ", n);
 			i--;
 		}
 	}

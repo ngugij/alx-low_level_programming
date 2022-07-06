@@ -5,7 +5,7 @@
  * print_alphabet - print alphabet in lowercase
  * followed by a new line
  *
- * Return: 0 (Success)
+ * Return: nothing
  */
 
 void print_alphabet(void)
@@ -18,5 +18,4 @@ void print_alphabet(void)
 		_putchar(c);
 	}
 	putchar('\n');
-	return (0);
 }

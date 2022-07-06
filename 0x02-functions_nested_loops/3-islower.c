@@ -12,7 +12,7 @@
 int _islower(int c)
 {
 
-	if (int islower(c))
+	if (islower(99))
 	{
 		_putchar(49);
 	}

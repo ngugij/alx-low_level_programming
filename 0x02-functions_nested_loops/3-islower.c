@@ -4,7 +4,7 @@
 
 /**
  * _islower - checks for lowercase characters
- *
+ * @c - character to be checked
  * Return: 1 if c is lowercase
  * otherwise return 0
  */
@@ -12,7 +12,7 @@
 int _islower(int c)
 {
 
-	if (islower(c))
+	if (islower(int c))
 	{
 		_putchar(49);
 	}

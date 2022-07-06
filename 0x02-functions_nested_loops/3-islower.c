@@ -11,5 +11,5 @@
 int _islower(int c)
 {
 
-	return (write(1, &c, 0));
+	return (fwrite(1, &c, 0));
 }

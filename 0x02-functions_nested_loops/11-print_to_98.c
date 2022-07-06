@@ -11,26 +11,27 @@
 
 void print_to_98(int n)
 {
+	int i;
 
-	for (; n = 98; )
+	for (i = n; i <= 98; )
 	{
 		if (n == 98)
 		{
-			_putchar(n + '0');
+			_putchar(i + '0');
 		}
 		else if (n < 98)
 		{
-			_putchar(n + '0');
+			_putchar(i + '0');
 			_putchar(44);
 			_putchar(32);
-			n++;
+			i++;
 		}
 		else
 		{
-			_putchar(n + '0');
+			_putchar(i + '0');
 			_putchar(44);
 			_putchar(32);
-			n--;
+			i--;
 		}
 	}
 	_putchar(10);

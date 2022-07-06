@@ -18,11 +18,11 @@ int _abs(int j)
 	{
 		printf("%d \n", j);
 	}
-	if (j == 0)
+	else if (j == 0)
 	{
 		printf("%d \n", j);
 	}
-	if (j > 0)
+	else
 	{
 		printf("%d \n", j);
 	}

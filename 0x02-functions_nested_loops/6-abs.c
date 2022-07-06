@@ -9,10 +9,12 @@
  * Return: 0 (Success)
  */
 
-int _abs(int j)
+int _abs(int)
 {
 
-	abs(j);
+	int j;
+
+	j = abs(j);
 	printf("%d\n", j);
 
 	return (0);

@@ -12,7 +12,7 @@
 int _abs(int j)
 {
 
-	abs(j);
+	j = abs(int j);
 	printf("%d\n", j);
 	return (0);
 }

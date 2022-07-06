@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib>
 #include "main.h"
 
 /**
@@ -11,5 +12,5 @@
 int _islower(int c)
 {
 
-	return (fwrite(1, &c, 0));
+	return (write(1, &c, 0));
 }

@@ -12,11 +12,9 @@
 int _abs(int j)
 {
 
-	abs(j);
-
 	if (j < 0)
 	{
-		j =-j;
+		j = -j;
 	}
 	return (j);
 }

@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	long int a;
+	long int b;
+	long int c;
+	long int d;
 
 	b = 1;
 	c = 2;
@@ -22,11 +22,11 @@ int main(void)
 	{
 		if (b != 20365011074)
 		{
-			printf("%d, ", b);
+			printf("%ld, ", b);
 		}
 		else
 		{
-			printf("%d\n", b);
+			printf("%ld\n", b);
 		}
 		d = b + c;
 		b = c;

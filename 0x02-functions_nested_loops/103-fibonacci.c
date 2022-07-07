@@ -28,7 +28,7 @@ int main(void)
 		b = c;
 		c = d;
 	}
-	print("%lu\n", sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }

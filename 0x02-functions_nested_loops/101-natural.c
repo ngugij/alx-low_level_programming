@@ -11,8 +11,8 @@
 int sum_multiples(void)
 {
 	int a;
-	int total1, total2;
-	int sum;
+	unsigned long int total1, total2;
+	unsigned long int sum;
 
 	total1 = total2 = sum = 0;
 
@@ -28,6 +28,6 @@ int sum_multiples(void)
 		}
 	}
 	sum = total1 + total2;
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }

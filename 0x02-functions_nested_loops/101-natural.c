@@ -14,6 +14,8 @@ int sum_multiples(void)
 	int total1, total2;
 	int sum;
 
+	total1 = total2 = sum = 0;
+
 	for (a = 1; a < 1024; a++)
 	{
 		if ((a % 3) == 0)

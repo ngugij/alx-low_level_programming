@@ -3,7 +3,7 @@
 
 /**
  * main - prints first Fibonacci numbers
- * 
+ *
  * Return: 0 (Success)
  */
 
@@ -28,7 +28,7 @@ int main(void)
 	z = c / 1000000000;
 	n = c % 1000000000;
 
-	for (a = 92; a <99; ++a)
+	for (a = 92; a < 99; ++a)
 	{
 		printf(", %lu", z + (n / 1000000000));
 		printf("%lu", n % 1000000000);

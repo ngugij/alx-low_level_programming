@@ -37,7 +37,7 @@ int main(void)
 		n = n + y;
 		y = n - y;
 	}
-	printf("\n";
+	printf("\n");
 
 	return (0);
 }

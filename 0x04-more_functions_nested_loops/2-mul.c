@@ -6,7 +6,7 @@
  * @a: integer 1
  * @b: integer 2
  *
- * Return: 0 (Success)
+ * Return: result
  */
 
 int mul(int a, int b)
@@ -14,5 +14,5 @@ int mul(int a, int b)
 	int result;
 
 	result = a * b;
-	return (0);
+	return (result);
 }

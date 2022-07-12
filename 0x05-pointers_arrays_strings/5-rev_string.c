@@ -11,10 +11,6 @@
 
 void rev_string(char *s)
 {
-	int i;
-
-	i = strlen(s) - 1;
-	i >= 0;
-	i--;
+	strrev(s);
 
 }

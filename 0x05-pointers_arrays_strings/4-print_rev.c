@@ -15,6 +15,6 @@ void print_rev(char *s)
 
 	for (i = strlen(s); i >= 0; i--)
 	{
-		puts(s);
+		printf("%c\n", s[i]);
 	}
 }

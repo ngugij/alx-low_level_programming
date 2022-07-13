@@ -6,7 +6,7 @@
 
 /**
  * random_password_gen - generates random passwords
- * n: length of password
+ * @n: length of password
  *
  * Return: nothing
  */
@@ -36,13 +36,13 @@ void random_password_gen(int n)
 		{
 			password[i] = LETTER[rand() % 26];
 			randomizer = rand() % 4;
-			printf("%c"' password[i]);
+			printf("%c", password[i]);
 		}
 		else
 		{
-			password[i] = letter [rand() % 26];
+			password[i] = letter[rand() % 26];
 			randomizer = rand() % 4;
-			printf("%c"' password[i]);
+			printf("%c", password[i]);
 		}
 	}
 }

@@ -43,6 +43,6 @@ int _atoi(char *s)
 			}
 			base = base * 10 + (s[i++] - '0');
 		}
-		return (base * sign);
 	}
+	return (base * sign);
 }

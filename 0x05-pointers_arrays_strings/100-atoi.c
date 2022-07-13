@@ -17,21 +17,21 @@ int _atoi(char *s)
 	int sign = 1;
 	int i = 0;
 
-	while (s[i] == ' ')
+	while ((s + i) == ' ')
 	{
 		i++;
 	}
 
-	if (s[i] == '-')
+	if ((s + i) == '-')
 	{
 		sign = -1;
 		i++;
 	}
 	while (i >= '0' && i <= '9')
 	{
-		for ( ; s[i] != '\0'; ++i)
+		for ( ; (s + i) != '\0'; ++i)
 		{
-			base = base * 10 + s[i] - '0';
+			base = base * 10 + (s + i) - '0';
 		}
 	}
 	return (base * sign);

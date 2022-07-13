@@ -27,9 +27,9 @@ int _atoi(char *s)
 		sign = -1;
 		i++;
 	}
-	for ( ; s[i] != '\0'; ++i)
+	while (i >= '0' && i <= '9')
 	{
-		while (i >= '0' && i <= '9')
+		for ( ; s[i] != '\0'; ++i)
 		{
 			base = base * 10 + s[i] - '0';
 		}

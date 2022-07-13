@@ -21,7 +21,7 @@ void random_password_gen(int n)
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
-	char password[n];
+	char password[] = n;
 
 	randomizer = rand() % 4;
 	for (i = 0; i < n; i++)
@@ -35,6 +35,12 @@ void random_password_gen(int n)
 		else if (randomizer == 3)
 		{
 			password[i] = LETTER[rand() % 26];
+			randomizer = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (randomizer == 2)
+		{
+			password[i] = symbols[rand() % 8];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}

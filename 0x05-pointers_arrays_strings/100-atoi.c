@@ -22,19 +22,16 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (s[0] == '-')
+	if (s[i] == '-')
 	{
 		sign = -1;
 		i++;
 	}
-	else
+	for ( ; s[i] != '\0'; ++i)
 	{
-		for ( ; s[i] != '\0'; ++i)
+		while (i >= '0' && i <= '9')
 		{
-			while (i >= '0' && i <= '9')
-			{
-				base = base * 10 + s[i] - '0';
-			}
+			base = base * 10 + s[i] - '0';
 		}
 	}
 	return (base * sign);

@@ -30,7 +30,7 @@ int _atoi(char *s)
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		if (base > INT_MAX /10 ||
-		    (base ++ INT_MAX /10 &&
+		    (base == INT_MAX /10 &&
 		     s[i] - '0' > 7))
 		{
 			if (sign == 1)

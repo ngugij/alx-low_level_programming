@@ -6,50 +6,25 @@
 
 /**
  * random_password_gen - generates random passwords
- * @n: length of password
  *
- * Return: nothing
+ * Return: 0 (Success)
  */
 
-void random_password_gen(int n)
+int random_password_gen(void)
 {
-	int i = 0;
-	int randomizer = 0;
-	srand((unsigned int)(time(NULL)));
-	char numbers[];
-	char letter[] = "abcdefghijklmnopqrstuvwxyz";
-	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char symbols[] = "!@#$^&*?";
-	char password[];
+	int password;
+	int add;
 
-	numbers[] = "0123456789";
+	srand(time(NULL));
+	add = 0;
 
-	randomizer = rand() % 4;
-	for (i = 0; i < n; i++)
+	while (add <= 2645)
 	{
-		if (randomizer == 1)
-		{
-			password[i] = numbers[rand() % 10];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 2)
-		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = letter[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
+		password = (rand() % 128);
+		add = add + password;
+		printf("%c", password);
 	}
+	printf("%c", 2772 - add);
+
+	return (0);
 }

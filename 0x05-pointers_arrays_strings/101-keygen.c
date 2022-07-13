@@ -5,12 +5,12 @@
 #include "main.h"
 
 /**
- * random_password_gen - generates random passwords
+ * main - generates random passwords
  *
  * Return: 0 (Success)
  */
 
-int random_password_gen(void)
+int main(void)
 {
 	int password;
 	int add;

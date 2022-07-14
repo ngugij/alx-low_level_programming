@@ -5,7 +5,7 @@
 /**
  * _strncpy - copies a string
  * @dest: pointer to the destination array where the content is to be copied
- * @str: string to be copied
+ * @src: string to be copied
  * @n: number of characters to be copied from source
  *
  * Return: pointer to the copied string dest

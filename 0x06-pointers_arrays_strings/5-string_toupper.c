@@ -4,13 +4,13 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
+ *@str: string to be reviewed
  *
  * Return: string
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *str;
 	int i;
 
 	while (str[i++])

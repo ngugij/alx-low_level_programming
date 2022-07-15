@@ -26,7 +26,7 @@ char *rot13(char *str)
 
 	while (str[++i])
 	{
-		for (a = 0; a < 52; a++)
+		for (a = 0; a <= 52; a++)
 		{
 			if (str[i] == alp[a])
 			{

@@ -13,7 +13,8 @@ char *cap_string(char *str)
 {
 	int i = 0;
 	int a;
-	char special[] = {32, 9, 10, ',', ';', '.', '!', '?', '"', '(', ')', '{', '{'};
+	char special[] = {32, 9, 10, ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '{'};
 	int len = 13;
 
 	while (str[i])

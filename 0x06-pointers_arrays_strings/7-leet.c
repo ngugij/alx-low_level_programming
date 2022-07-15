@@ -13,18 +13,23 @@ char *leet(char *str)
 {
 	int i = 0;
 	int a;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int len = 5;
+	char alp[5] = {'A', 'E', 'O', 'T', 'L'};
+	char num[5] = {'4', '3', '0', '7', '1'};
 
-	while (str[++i])
+	while (str[i])
 	{
-		for (a = 0; a <= 7; a++)
+		a = 0;
+
+		while (a < len)
 		{
-			if (str[i] == leet[a] ||
-			    str[i] - 32 == leet[a])
+			if (str[i] == alp[a] || str[i] - 32 == alp[a])
 			{
-				str[i] = a + '0';
+				str[i] = num[a];
 			}
+			a++;
 		}
+		i++;
 	}
 	return (str);
 }

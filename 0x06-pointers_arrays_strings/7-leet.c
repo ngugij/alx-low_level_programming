@@ -20,7 +20,7 @@ char *leet(char *str)
 		for (a = 0; a <= 7; a++)
 		{
 			if (str[i] == leet[a] ||
-					str[i] - 32 == leet[a])
+			    str[i] - 32 == leet[a])
 			{
 				str[i] = a + '0';
 			}

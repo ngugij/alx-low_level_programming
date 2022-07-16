@@ -24,7 +24,7 @@ char *rot13(char *str)
 		's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c',
 		'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (a = 0; alp[a] != '\0'; a++)
 		{

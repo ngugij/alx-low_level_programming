@@ -24,9 +24,9 @@ char *rot13(char *str)
 		's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c',
 		'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'};
 
-	while (str[++i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (a = 0; a <= 52; a++)
+		for (a = 0; alp[a] != '\0'; a++)
 		{
 			if (str[i] == alp[a])
 			{

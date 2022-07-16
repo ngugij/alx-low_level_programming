@@ -30,38 +30,26 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	a--;
 	b--;
 	if (a > size_r || b > size_r)
-	{
 		return (0);
-	}
 	for ( ; c < size_r; a--, b--, c++)
 	{
 		add = tens;
 		if (a >= 0)
-		{
 			add = add + n1[a] - '0';
-		}
 		if (b >= 0)
-		{
 			add = add + n2[b] - '0';
-		}
 		if (a < 0 && b < 0 && add == 0)
-		{
 			break;
-		}
 		tens = add / 10;
 		r[c] = add % 10 + '0';
 	}
 	if (a >= 0 || b >= 0 || add > 0)
-	{
 		return (0);
-	}
 	r[c] = '\0';
 	c--;
 	for ( ; strt < c; c--, strt++)
-	{
 		change = r[c];
 		r[c] = r[strt];
 		r[strt] = change;
-	}
 	return (r);
 }

@@ -12,5 +12,16 @@
 
 void _print_rev_recursion(char *s)
 {
-	strrev(s);
+	int i;
+	int length;
+	int sub;
+
+	length = strlen(s);
+
+	for (i = 0; i < length / 2; i++)
+	{
+		sub = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = sub;
+	}
 }

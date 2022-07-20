@@ -12,18 +12,9 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i;
-	int length;
-	int sub;
-
-	length = strlen(s);
-
-	if (i < length / 2)
+	if (*s)
 	{
-		sub = s[i];
-		s[i] = s[length - i - 1];
-		s[length - i - 1] = sub;
-		i++;
-		_print_rev_recursion(s[i]);
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
 	}
 }

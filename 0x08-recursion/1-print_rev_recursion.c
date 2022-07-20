@@ -24,6 +24,6 @@ void _print_rev_recursion(char *s)
 		s[i] = s[length - i - 1];
 		s[length - i - 1] = sub;
 		i++;
-		_print_rev_recursion(s);
+		_print_rev_recursion(s[i]);
 	}
 }

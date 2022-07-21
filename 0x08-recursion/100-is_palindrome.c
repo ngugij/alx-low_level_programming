@@ -54,7 +54,7 @@ int checker(char *s, int i, int len)
 	{
 		return (0);
 	}
-	if (i > len)
+	if (i >= len)
 	{
 		return (1);
 	}

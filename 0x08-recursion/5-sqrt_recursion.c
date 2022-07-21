@@ -36,8 +36,5 @@ int _sqrt(int i, int n)
 	{
 		return (i);
 	}
-	else
-	{
-		return (_sqrt(n, i + 1));
-	}
+	return (_sqrt(n, i + 1));
 }

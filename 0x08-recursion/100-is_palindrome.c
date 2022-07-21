@@ -12,6 +12,10 @@ int is_palindrome(char *s)
 {
 	if (*s == 0)
 	{
+		return (1);
+	}
+	else
+	{
 		return (checker(s, 0, _strlen_(s)));
 	}
 }

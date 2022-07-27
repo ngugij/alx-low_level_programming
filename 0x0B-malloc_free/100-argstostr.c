@@ -13,10 +13,10 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
-	int a;
-	int b;
-	int c;
+	int i = 0;
+	int a = 0;
+	int b = 0;
+	int c = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)

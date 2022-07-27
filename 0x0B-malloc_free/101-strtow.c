@@ -74,7 +74,7 @@ char **strtow(char *str)
 				b = 0;
 			}
 		}
-		else if (c++ == 0)
+		else if (b++ == 0)
 		{
 			start = i;
 		}

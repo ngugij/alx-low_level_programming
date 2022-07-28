@@ -21,12 +21,10 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	else
-	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		mult = a * b;
-		printf("%d\n", mult);
-	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	mult = a * b;
+	printf("%d\n", mult);
 	return (0);
 }

@@ -70,7 +70,7 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *a, *b;
-	int len1, len2, len, i, rem, n, m, *mul, c = 0;
+	int len1, len2, len, i, rem, m, n, *mul, c = 0;
 
 	a = argv[1], b = argv[2];
 	if (argc != 3 || !is_digit(a) || !is_digit(b))
@@ -85,12 +85,12 @@ int main(int argc, char *argv[])
 		mul[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
-		n = a[len1] - '0';
+		m = a[len1] - '0';
 		rem = 0;
 		for (len2 = _strlen(b) - 1; len2 >= 0; len2--)
 		{
-			m = b[len2] - '0';
-			rem += mul[len1 + len2 + 1] + (n * m);
+			n = b[len2] - '0';
+			rem += mul[len1 + len2 + 1] + (m * n);
 			mul[len1 + len2 + 1] = rem % 10;
 			rem /= 10;
 		}

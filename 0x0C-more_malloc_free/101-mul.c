@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
 			m = b[len2] - '0';
 			rem += mul[len1 + len2 + 1] + (n * m);
 			mul[len1 + len2 + 1] = rem % 10;
-			rem = rem / 10;
+			rem /= 10;
 		}
 		if (rem > 0)
 			mul[len1 + len2 + 1] += rem;

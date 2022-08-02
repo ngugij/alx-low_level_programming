@@ -25,9 +25,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[len_old] != '\0')
 		len_old++;
 	n_dog = malloc(sizeof(struct dog));
-	if len_old++;
-
-	n_dog = malloc(sizeof(struct dog));
 	if (n_dog == NULL)
 	{
 		free(n_dog);

@@ -8,10 +8,10 @@
  * @n: integer
  * @next: pointer to the next node
  *
- * Description: Node structure for a singly linked list
+ * Description: node structure for a singly linked list
  */
 
-typedef structlistint_s
+typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;

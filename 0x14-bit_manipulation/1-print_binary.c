@@ -4,7 +4,7 @@
 
 /**
  * print_binary - prints the binary representation of a number
- * n: number to be converted
+ * @n: number to be converted
  *
  * Return: nothing
  */

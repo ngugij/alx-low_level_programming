@@ -3,7 +3,7 @@
 
 
 /**
- * real - reallocates memory to the nodes in a list
+ * re - reallocates memory to the nodes in a list
  * @old: old list
  * @size: size of new list
  * @new: node to append to new list
@@ -11,7 +11,7 @@
  * Return: pointer to new list
  */
 
-const listint_t **real(const listint_t **old, size_t size, const listint_t *new)
+const listint_t **re(const listint_t **old, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t i;
@@ -58,7 +58,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		num++;
-		old = real(old, num, head);
+		old = re(old, num, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}

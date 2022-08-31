@@ -10,7 +10,7 @@
  */
 
 
-unsigned int _strlen(char *str)
+unsigned int _strlen(const char *str)
 {
 	unsigned int i;
 

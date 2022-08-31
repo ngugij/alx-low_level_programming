@@ -10,12 +10,12 @@
  */
 
 
-unsigned int _strlen(const char *str)
+int _strlen(const char *str)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; str[i]; i++)
-		;
+	while (str[i] != '\0')
+		i++;
 	return (i);
 }
 
@@ -32,21 +32,19 @@ unsigned int _strlen(const char *str)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new_node;
 
-	if (str == NULL)
-		return (NULL);
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
-		return (NULL);
-	new->str = strdup(str);
-	if (new->str == NULL)
+	new_node = malloc(sizeof(list_t));
+	if (new_node != NULL)
 	{
-		free(new);
-		return (NULL);
+		new_node->str = strdup(str);
+		new_node->len = _strlen(str);
+		new_node->next = *head;
 	}
-	new->len = _strlen(new->str);
-	new->next = *head;
-	*head = new;
-	return (new);
+	else
+		return (NULL);
+	if (*head != NULL)
+		new_node->next = *head;
+	*head = new_node;
+	return (new_node);
 }

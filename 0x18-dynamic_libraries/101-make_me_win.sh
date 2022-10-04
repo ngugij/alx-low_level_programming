@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -fPIC -c win.c -shared -o mmwin.so win.o
+gcc -Wall -Wextra -pedantic -fPIC win.c -shared -o mmwin.so
 LD_PRELOAD=/$PWD/mmwin.so
